@@ -6,7 +6,8 @@
 This is a modification of the My Chevrolet Integration from Home Assistant.  While I do not has an electric vehicle (EV), I do have a gas Chrevolet that uses the My Chevrolet app.  With a little bit of fiddling, it is possible to retrieve the gas-related inforation, so I can track my fuel economy, and how much gas I have left.
 
 ## Installation
-1. Copy the `mygaschevy` folder to the `custom_components` folder in your Home Assistant configuration directory:
+### Manual
+Copy the `mygaschevy` folder to the `custom_components` folder in your Home Assistant configuration directory:
 ```
 /home/homeassistant/
 ├── .homeassistant
@@ -14,7 +15,11 @@ This is a modification of the My Chevrolet Integration from Home Assistant.  Whi
 │   │   └── mygaschevy
 
 ```
-2. Add the following code in your `configuration.yaml` file, or modify your google_maps configuration:
+### HACS
+Under Custom Repositories, add https://github.com/dennyreiter/hass-mygaschevy as an integration. Then install.
+
+## Configuration
+Add the following code in your `configuration.yaml` file, or modify your google_maps configuration:
 ```
 mygaschevy:
     username: YOUR_USERNAME
