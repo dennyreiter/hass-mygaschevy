@@ -1,4 +1,4 @@
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![hacs][hacsbadge]](hacs)
 ![Project Maintenance][maintenance-shield]
 # Home Assistant My Gas Chevrolet
