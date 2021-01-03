@@ -49,3 +49,6 @@ binary_sensor:
         value_template: >-
           {{ states('sensor.mygaschevy_2011_chevrolet_silverado_1500_fuel_percentage') | int < 18 }}
   ```
+  [hacs]: https://github.com/custom-components/hacs
+  [hacsbadge]: https://img.shields.io/badge/HACS-Custom-orange.svg?style=for-the-badge
+  [maintenance-shield]: https://img.shields.io/badge/maintainer-dennyreiter-blue.svg?style=for-the-badge
