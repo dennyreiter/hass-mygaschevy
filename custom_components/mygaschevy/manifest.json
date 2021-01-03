@@ -1,0 +1,7 @@
+{
+  "domain": "mygaschevy",
+  "name": "myGasChevrolet",
+  "documentation": "https://https://github.com/dennyreiter/hass-mygaschevy",
+  "requirements": ["mychevy==2.0.1"],
+  "codeowners": ["@dennyreiter"]
+}
