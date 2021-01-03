@@ -19,12 +19,11 @@ from . import (
 _LOGGER = logging.getLogger(__name__)
 
 
-# <EVCar name=2011 Chevrolet Silverado 1500, gasRange=85.52553059159999 miles, fuelEconomy=15.5947268529%, gasFuelLevelPercentage=21.1%, totalMiles=136960.6182434325 miles, chargeState=None, chargeMode=None, estimatedFullChargeBy=>
 SENSORS = [
     GVSensorConfig("Mileage", "totalMiles", "miles", "mdi:speedometer"),
     GVSensorConfig("Gas Range", "gasRange", "miles", "mdi:speedometer"),
-    GVSensorConfig("Fuel Economy", "fuelEconomy","mpg"),
-    GVSensorConfig("Fuel Percentage", "gasFuelLevelPercentage","%"),
+    GVSensorConfig("Fuel Economy", "fuelEconomy", "mpg"),
+    GVSensorConfig("Fuel Percentage", "gasFuelLevelPercentage", "%", "mdi:gas-station"),
 ]
 
 
@@ -45,8 +44,8 @@ def setup_platform(hass, config, add_entities, discovery_info=None):
 class MyChevyStatus(Entity):
     """A string representing the charge mode."""
 
-    _name = "MyChevy Status"
-    _icon = "mdi:car-connected"
+    _name = "MyGasChevy Status"
+    _icon = "mdi:car-info"
 
     def __init__(self):
         """Initialize sensor with car connection."""
