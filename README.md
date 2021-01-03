@@ -1,4 +1,4 @@
-[![License][license-shield]](LICENSE)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]
 [![hacs][hacsbadge]](hacs)
 ![Project Maintenance][maintenance-shield]
 # Home Assistant My Gas Chevrolet
@@ -52,5 +52,4 @@ binary_sensor:
   ```
   [hacs]: https://github.com/custom-components/hacs
   [hacsbadge]: https://img.shields.io/badge/HACS-Custom-orange.svg?style=for-the-badge
-  [license-shield]: https://img.shields.io/github/license-Apache--2.0-blue.svg?style=for-the-badge
   [maintenance-shield]: https://img.shields.io/badge/maintainer-dennyreiter-blue.svg?style=for-the-badge
