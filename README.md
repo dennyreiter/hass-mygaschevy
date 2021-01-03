@@ -1,5 +1,5 @@
 # Home Assistant My Gas Chevrolet
-This is a modification of the My Chevrolet Integration from Home Assistant.  While I do not has an electric vehicle (EV), I do have a gas Chrevolet that uses the My Chevrolet app.  With a little bit of fiddling, it is possible to retrieve the gas-related inforation, so I can track my fuel economy, and how much gass I have left.
+This is a modification of the My Chevrolet Integration from Home Assistant.  While I do not has an electric vehicle (EV), I do have a gas Chrevolet that uses the My Chevrolet app.  With a little bit of fiddling, it is possible to retrieve the gas-related inforation, so I can track my fuel economy, and how much gas I have left.
 
 ## Installation
 1. Copy the `mygaschevy` folder to the `custom_components` folder in your Home Assistant configuration directory:
@@ -34,3 +34,16 @@ The created sensors will be in the form of `sensor.mygaschevy_VEHICLE_NAME.*`
 | sensor.mygaschevy_VEHICLE_NAME_fuel_percentage  | percentage of fuel left in the tank     |
 | sensor.mygaschevy_VEHICLE_NAME_gas_range        | approximate range in miles per vehicle  |
 | sensor.mygaschevy_VEHICLE_NAME_mileage          | the vehicle mileage                     |
+
+## Example Binary Sensor
+```
+binary_sensor:
+
+  - platform: template
+    sensors:
+      truck_gas_low:
+        friendly_name: "Truck Gas Level Low"
+        device_class: gas
+        value_template: >-
+          {{ states('sensor.mygaschevy_2011_chevrolet_silverado_1500_fuel_percentage') | int < 18 }}
+  ```
