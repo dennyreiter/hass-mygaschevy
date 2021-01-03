@@ -10,8 +10,8 @@ from homeassistant.util import slugify
 from . import (
     DOMAIN as MYGASCHEVY_DOMAIN,
     ERROR_TOPIC,
-    MYCHEVY_ERROR,
-    MYCHEVY_SUCCESS,
+    MYGASCHEVY_ERROR,
+    MYGASCHEVY_SUCCESS,
     UPDATE_TOPIC,
     GVSensorConfig,
 )
@@ -69,9 +69,9 @@ class MyChevyStatus(Entity):
     @callback
     def success(self):
         """Update state, trigger updates."""
-        if self._state != MYCHEVY_SUCCESS:
+        if self._state != MYGASCHEVY_SUCCESS:
             _LOGGER.debug("Successfully connected to mychevy website")
-            self._state = MYCHEVY_SUCCESS
+            self._state = MYGASCHEVY_SUCCESS
         self.async_write_ha_state()
 
     @callback
@@ -81,7 +81,7 @@ class MyChevyStatus(Entity):
             "Connection to mychevy website failed. "
             "This probably means the mychevy to OnStar link is down"
         )
-        self._state = MYCHEVY_ERROR
+        self._state = MYGASCHEVY_ERROR
         self.async_write_ha_state()
 
     @property
@@ -125,7 +125,7 @@ class GVSensor(Entity):
         self._state_attributes = {}
         self._car_vid = car_vid
 
-        self.entity_id = f"{SENSOR_DOMAIN}.{MYCHEVY_DOMAIN}_{slugify(self._car.name)}_{slugify(self._name)}"
+        self.entity_id = f"{SENSOR_DOMAIN}.{MYGASCHEVY_DOMAIN}_{slugify(self._car.name)}_{slugify(self._name)}"
 
     async def async_added_to_hass(self):
         """Register callbacks."""
