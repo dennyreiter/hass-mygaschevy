@@ -18,9 +18,6 @@ ERROR_TOPIC = f"{DOMAIN}_error"
 MYCHEVY_SUCCESS = "success"
 MYCHEVY_ERROR = "error"
 
-NOTIFICATION_ID = "mychevy_website_notification"
-NOTIFICATION_TITLE = "MyChevy website status"
-
 _LOGGER = logging.getLogger(__name__)
 
 MIN_TIME_BETWEEN_UPDATES = timedelta(minutes=30)
