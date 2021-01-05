@@ -2,6 +2,6 @@
   "domain": "mygaschevy",
   "name": "myGasChevrolet",
   "documentation": "https://https://github.com/dennyreiter/hass-mygaschevy",
-  "requirements": ["mychevy==2.0.1"],
+  "requirements": ["mychevy==2.1.1"],
   "codeowners": ["@dennyreiter"]
 }
