@@ -19,7 +19,7 @@ Copy the `mygaschevy` folder to the `custom_components` folder in your Home Assi
 Under Custom Repositories, add https://github.com/dennyreiter/hass-mygaschevy as an integration. Then install.
 
 ## Configuration
-Add the following code in your `configuration.yaml` file, or modify your google_maps configuration:
+Add the following code in your `configuration.yaml` file:
 ```
 mygaschevy:
     username: YOUR_USERNAME
