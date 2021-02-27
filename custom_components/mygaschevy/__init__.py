@@ -74,11 +74,6 @@ def setup(hass, base_config):
 class MyChevyHub(threading.Thread):
     """MyChevy Hub.
 
-    Connecting to the mychevy website is done through a selenium
-    webscraping process. That can only run synchronously. In order to
-    prevent blocking of other parts of Home Assistant the architecture
-    launches a polling loop in a thread.
-
     When new data is received, sensors are updated, and hass is
     signaled that there are updates. Sensors are not created until the
     first update, which will be 60 - 120 seconds after the platform

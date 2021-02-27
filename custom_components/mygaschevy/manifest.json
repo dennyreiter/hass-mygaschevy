@@ -1,7 +1,9 @@
 {
   "domain": "mygaschevy",
   "name": "myGasChevrolet",
+  "version": "2021.1.0",
   "documentation": "https://https://github.com/dennyreiter/hass-mygaschevy",
+  "issue_tracker": "https://https://github.com/dennyreiter/hass-mygaschevy/issues",
   "requirements": ["mychevy==2.1.1"],
   "codeowners": ["@dennyreiter"]
 }
