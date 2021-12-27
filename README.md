@@ -1,5 +1,7 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 
+# This project is now archived due to MyChevy being removed from Home Assistant. Chevrolet has made it almost impossible for it to work due to constant authentication changes
+
 [![hacs][hacsbadge]](hacs)
 ![Project Maintenance][maintenance-shield]
 # Home Assistant My Gas Chevrolet
